@@ -1,0 +1,41 @@
+/* Media query pour les écrans ayant une largeur maximale de 740px */
+@media only screen and (max-width: 740px) {
+    #wrapper {
+        background: none; /* Annule la couleur de fond */
+        width: 100%; /* Réglez la largeur sur 100% pour une seule colonne */
+        float: none; /* Annule le flottement */
+    }
+
+    /* Centrer les titres principaux */
+    h1, h2, h3 {
+        text-align: center;
+    }
+}
+
+/* Media query pour les écrans ayant une largeur maximale de 480px */
+@media only screen and (max-width: 480px) {
+    #wrapper {
+        background: none; /* Annule la couleur de fond */
+        width: 100%; /* Réglez la largeur sur 100% pour une seule colonne */
+        float: none; /* Annule le flottement */
+    }
+
+    /* Centrer les titres principaux */
+    h1, h2, h3 {
+        text-align: center;
+    }
+}
+
+/* Media query pour les écrans ayant une largeur maximale de 570px */
+@media only screen and (max-width: 570px) {
+    #wrapper {
+        background: none; /* Annule la couleur de fond */
+        width: 100%; /* Réglez la largeur sur 100% pour une seule colonne */
+        float: none; /* Annule le flottement */
+    }
+
+    /* Centrer les titres principaux */
+    h1, h2, h3 {
+        text-align: center;
+    }
+}

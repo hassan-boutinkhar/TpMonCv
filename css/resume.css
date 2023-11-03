@@ -1,0 +1,54 @@
+html {
+    background-color: #777;
+}
+
+#wrapper {
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* Pour réduire la taille de l'image */
+img {
+    max-width: 150px; /* Définissez la largeur maximale souhaitée */
+    height: auto; /* Conservez la proportion d'origine de l'image */
+}
+/*header {
+    text-align: center; !* Centre le contenu horizontalement *!
+    background-color: #f9f9f9; !* Couleur de fond *!
+    padding: 20px; !* Marge intérieure pour l'espacement *!
+    border: 1px solid #ccc; !* Bordure de 1px solide *!
+    border-radius: 3px; !* Coins arrondis *!
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); !* Effet d'ombre *!
+}
+
+header h1 {
+    font-size: 24px; !* Taille de la police du titre *!
+    margin: 0; !* Supprime la marge supérieure *!
+}
+
+header h2 {
+    font-size: 18px; !* Taille de la police du sous-titre *!
+    margin: 10px 0; !* Marge supérieure et inférieure *!
+}
+
+header p {
+    font-size: 16px; !* Taille de la police du texte *!
+    margin: 10px 0; !* Marge supérieure et inférieure *!
+}
+
+header img {
+    max-width: 150px; !* Taille maximale de l'image *!
+    height: auto; !* Conserve la proportion d'origine *!
+}*/
+h1{
+    font-family: obvia, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}

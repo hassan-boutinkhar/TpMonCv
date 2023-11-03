@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" itemscope itemtype="http://schema.org/Person">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="utf-8">
@@ -7,139 +7,152 @@
     <meta name="keywords" content="web, developer, resume">
     <meta name="author" content="Hassan Boutinkhar">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/resume.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
     <title>Mon CV</title>
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    [endif]-->
+    <![endif]-->
 </head>
 <body>
-<header>
-    <h1>Hassan Boutinkhar</h1>
-    <h2>Élève ingénieur en double diplômation</h2>
-    <img src="/assets/profile.jfif" alt="Photo de Hassan Boutinkhar">
-    <p>
-        Adresse: Brest - France <br>
-        Email: hassanboutinkhar15@gmail.com <br>
-        LinkedIn: <a href="https://www.linkedin.com/in/boutinkhar-hassan-57509416b/">@Hassan-Boutinkhar</a> <br>
-        Téléphone: +33 6 63 02 89 00 <br>
-        Nationalité: Marocaine <br>
-        Permis B
-    </p>
-</header>
-<section>
-    <h2>Présentation</h2>
-    <p>        Étudiant en 2ème année de Master en Développement Logiciel des Systèmes d'Information à l'UBO de Brest et en 5ème année de Génie Logiciel à l'ENSA d'Al Hoceima. À la recherche d'un stage PFE d'une durée de 6 mois à partir d'avril.
-    </p>
-</section>
-<section>
-    <h2>Expériences Professionnelles</h2>
-    <article>
-        <h3>Stage Ingénieur développeur full-stack Java / Angular - Sopra Banking Software</h3>
-        <p>Juillet 2023 – Août 2023</p>
-        <p>Conception et mise en place d'une application web de gestion des collaborateurs et des congés.</p>
+<div id="wrapper">
+    <header>
+        <h1 itemprop="name">Hassan Boutinkhar</h1>
+        <h2 itemprop="jobTitle">Élève ingénieur en double diplômation</h2>
+        <img src="/assets/profile.jfif" alt="Photo de Hassan Boutinkhar">
+        <h2>Contact</h2>
+        <p>
+            <i class="fa fa-map-marker"></i> Adresse: Brest - France <br>
+            <i class="fa fa-envelope"></i> Email: <a href="mailto:hassanboutinkhar15@gmail.com" itemprop="email">hassanboutinkhar15@gmail.com</a> <br>
+            <i class="fa fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/boutinkhar-hassan-57509416b/" itemprop="url">Hassan-Boutinkhar</a> <br>
+            <i class="fa fa-phone"></i> Téléphone: +33 6 63 02 89 00 <br>
+            <i class="fa fa-globe"></i> Nationalité: Marocaine <br>
+            <i class="fa fa-car"></i> Permis B
+        </p>
+    </header>
+    <section>
+        <h2>Présentation</h2>
+        <p itemprop="description">Étudiant en 2ème année de Master en Développement Logiciel des Systèmes d'Information à l'UBO de Brest et en 5ème année de Génie Logiciel à l'ENSA d'Al Hoceima. À la recherche d'un stage PFE d'une durée de 6 mois à partir d'avril.</p>
+    </section>
+    <section>
+        <h2>Expériences Professionnelles</h2>
+        <article itemprop="worksFor" itemscope itemtype="http://schema.org/WorkExperience">
+            <h3 itemprop="jobTitle">Stage Ingénieur développeur full-stack Java / Angular - Sopra Banking Software</h3>
+            <p><span itemprop="startDate">Juillet 2023</span> – <span itemprop="endDate">Août 2023</span></p>
+            <p itemprop="description">Conception et mise en place d'une application web de gestion des collaborateurs et des congés.</p>
+            <ul>
+                <li>Conception et développement d'un module complet de gestion des projets et des collaborateurs.</li>
+                <li>Réalisation d’un calendrier permettant aux managers d'assigner des projets à chaque collaborateur.</li>
+                <li>Création d'un tableau de bord interactif visualisant les taux d'occupation pour chaque collaborateur trimestriellement.</li>
+                <li>Intégration d'un système automatisé de gestion des congés des collaborateurs.</li>
+            </ul>
+            <p itemprop="skills">Technologies utilisées : Java, Spring Boot, Angular, MySQL, GitLab/Git, Swagger, RESTAPI</p>
+        </article>
+        <article itemprop="worksFor" itemscope itemtype="http://schema.org/WorkExperience">
+            <h3 itemprop="jobTitle">Stage Ingénieur développeur full-stack Java / Angular - NewDev MAROC</h3>
+            <p><span itemprop="startDate">Septembre 2022</span> - <span itemprop="endDate">Décembre 2022</span></p>
+            <p itemprop="description">Développement d’une Platform G-stock pour la gestion du stock.</p>
+            <ul>
+                <li>La création de plusieurs interfaces pour la gestion des ateliers : Article, catégorie, gestion des rôles, fournisseur, client, des utilisateurs et commandes clients / fournisseurs.</li>
+                <li>La création d’un tableau de bord qui affiche les statistiques des commandes clients / fournisseurs et mouvements du stock.</li>
+                <li>Gestion de la partie CRUD.</li>
+            </ul>
+            <p itemprop="skills">Technologies utilisées : Java, Spring Boot, Angular, MySQL, Chart.js, Swagger, RESTAPI, UML</p>
+        </article>
+        <article itemprop="worksFor" itemscope itemtype="http://schema.org/WorkExperience">
+            <h3 itemprop="jobTitle">Stage Ingénieur développeur full-stack Java / Angular - MYTOWER</h3>
+            <p><span itemprop="startDate">Juillet 2022</span> - <span itemprop="endDate">Septembre 2022</span></p>
+            <p itemprop="description">La participation au développement du projet TMS 2.x.</p>
+            <ul>
+                <li>Etudier la partie API et web pour interfacer le projet MyTower avec une autre solution.</li>
+                <li>Développement d’un atelier d’internalisation du projet TMS.</li>
+                <li>Adopter les bonnes pratiques du code à travers le code review.</li>
+                <li>Participer aux réunions Daily meetings, aux rétrospectives Scrum et aux sprint plannings.</li>
+            </ul>
+            <p itemprop="skills">Technologies utilisées : Java, Spring Boot, Angular, PostgreSQL, Scrum, RESTAPI</p>
+        </article>
+    </section>
+    <!-- Suite de votre CV -->
+
+    <section>
+        <h2>Diplômes et Formations</h2>
+        <article itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+            <h3 itemprop="name">Master 2 Développement logiciel des systèmes d'information - Université de Bretagne Occidentale</h3>
+            <p><span itemprop="startDate">Septembre 2023</span> – <span itemprop="endDate">En cours</span> Brest-France</p>
+        </article>
+        <article itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+            <h3 itemprop="name">Diplôme d'ingénieur en Génie Logiciel - ENSA-Ecole nationale des sciences appliquées</h3>
+            <p><span itemprop="startDate">Septembre 2018</span> – <span itemprop="endDate">En cours</span> AL HOCEIMA-Maroc</p>
+        </article>
+        <article itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+            <h3 itemprop="name">Baccalauréat filière Sciences Physiques et Chimiques mention très bien</h3>
+            <p><span itemprop="startDate">Septembre 2015</span> – <span itemprop="endDate">Juin 2018</span> Guelmim-Maroc</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>PARASCOLAIRE</h2>
         <ul>
-            <li>Conception et développement d'un module complet de gestion des projets et des collaborateurs.</li>
-            <li>Réalisation d’un calendrier permettant aux managers d'assigner des projets à chaque collaborateur.</li>
-            <li>Création d'un tableau de bord interactif visualisant les taux d'occupation pour chaque collaborateur trimestriellement.</li>
-            <li>Intégration d'un système automatisé de gestion des congés des collaborateurs.</li>
+            <li itemprop="award">Premier Prix à Hack & pitch by Screendy</li>
+            <li itemprop="memberOf">Président du club social et de solidarité de l’ENSA'H</li>
+            <li itemprop="memberOf">Trésorier du comité organisateur de l’événement TECH-EXPERIENCE lors de sa 5ème édition à l’ENSA'H</li>
         </ul>
-        <p>Technologies utilisées : Java, Spring Boot, Angular, MySQL, GitLab/Git, Swagger, RESTAPI</p>
-    </article>
-    <article>
-        <h3>Stage Ingénieur développeur full-stack Java / Angular - NewDev MAROC</h3>
-        <p>Septembre 2022 - Décembre 2022</p>
-        <p>Développement d’une Platform G-stock pour la gestion du stock.</p>
+    </section>
+
+    <section>
+        <h2>Compétences</h2>
+        <dl>
+            <dt>Langages de programmation :</dt>
+            <dd itemprop="knows">Java, PHP, C/C++, Python</dd>
+
+            <dt>Développement web :</dt>
+            <dd itemprop="knows">Front-end : HTML5, CSS3, JAVASCRIPT, ANGULAR, JQUERY, BOOTSTRAP</dd>
+            <dd itemprop="knows">Back-end : Java, J2E, Spring Boot</dd>
+
+            <dt>Base de données :</dt>
+            <dd itemprop="knows">MYSQL, ORACLE, PostgreSQL</dd>
+
+            <dt>Framework et bibliothèques :</dt>
+            <dd itemprop="knows">Spring Boot, Spring Security, Spring MVC, Hibernate, spring data JPA, chart.js</dd>
+
+            <dt>Méthodologies et conception :</dt>
+            <dd itemprop="knows">UML, Merise</dd>
+
+            <dt>Gestion de projet :</dt>
+            <dd itemprop="knows">Scrum</dd>
+        </dl>
+    </section>
+
+    <section>
+        <h2>Langues</h2>
         <ul>
-            <li>La création de plusieurs interfaces pour la gestion des ateliers : Article, catégorie, gestion des rôles, fournisseur, client, des utilisateurs et commandes clients / fournisseurs.</li>
-            <li>La création d’un tableau de bord qui affiche les statistiques des commandes clients / fournisseurs et mouvements du stock.</li>
-            <li>Gestion de la partie CRUD.</li>
+            <li><span itemprop="inLanguage">Anglais : Courant</span></li>
+            <li><span itemprop="inLanguage">Français : Courant</span></li>
+            <li><span itemprop="inLanguage">Arabe : Maternel</span></li>
+            <li><span itemprop="inLanguage">Espagnol : Notion de bases</span></li>
         </ul>
-        <p>Technologies utilisées : Java, Spring Boot, Angular, MySQL, Chart.js, Swagger, RESTAPI, UML</p>
-    </article>
-    <article>
-        <h3>Stage Ingénieur développeur full-stack Java / Angular - MYTOWER</h3>
-        <p>Juillet 2022 - Septembre 2022</p>
-        <p>La participation au développement du projet TMS 2.x.</p>
+    </section>
+
+    <section>
+        <h2>Centres d'Intérêt</h2>
         <ul>
-            <li>Etudier la partie API et web pour interfacer le projet MyTower avec une autre solution.</li>
-            <li>Développement d’un atelier d’internalisation du projet TMS.</li>
-            <li>Adopter les bonnes pratiques du code à travers le code review.</li>
-            <li>Participer aux réunions Daily meetings, aux rétrospectives Scrum et aux sprint plannings.</li>
+            <li itemprop="interest">Bénévolat</li>
+            <li itemprop="interest">Voyage</li>
+            <li itemprop="interest">Animation</li>
         </ul>
-        <p>Technologies utilisées : Java, Spring Boot, Angular, PostgreSQL, Scrum, RESTAPI</p>
-    </article>
-</section>
-<section>
-    <h2>Diplômes et Formations</h2>
-    <article>
-        <h3>Master 2 Développement logiciel des systèmes d'information - Université de Bretagne Occidentale</h3>
-        <p>Septembre 2023 – En cours Brest-France</p>
-    </article>
-    <article>
-        <h3>Diplôme d'ingénieur en Génie Logiciel - ENSA-Ecole nationale des sciences appliquées</h3>
-        <p>Septembre 2018 – En cours AL HOCEIMA-Maroc</p>
-    </article>
-    <article>
-        <h3>Baccalauréat filière Sciences Physiques et Chimiques mention très bien</h3>
-        <p>Septembre 2015 – Juin 2018 Guelmim-Maroc</p>
-    </article>
-</section>
-<section>
-    <h2>PARASCOLAIRE</h2>
-    <ul>
-        <li>Premier Prix à Hack & pitch by Screendy</li>
-        <li>Président du club social et de solidarité de l’ENSA'H</li>
-        <li>Trésorier du comité organisateur de l’événement
-            TECH-EXPERIENCE lors de sa 5ème édition à l’ENSA'H</li>
-    </ul>
-</section>
-<section>
-    <h2>Compétences</h2>
-    <dl>
-        <dt>Langages de programmation :</dt>
-        <dd>Java, PHP, C/C++, Python</dd>
+    </section>
 
-        <dt>Développement web :</dt>
-        <dd>Front-end : HTML5, CSS3, JAVASCRIPT, ANGULAR, JQUERY, BOOTSTRAP</dd>
-        <dd>Back-end : Java, J2E, Spring Boot</dd>
-
-        <dt>Base de données :</dt>
-        <dd>MYSQL, ORACLE, PostgreSQL</dd>
-
-        <dt>Framework et bibliothèques :</dt>
-        <dd>Spring Boot, Spring Security, Spring MVC, Hibernate, spring data JPA, chart.js</dd>
-
-        <dt>Méthodologies et conception :</dt>
-        <dd>UML, Merise</dd>
-
-        <dt>Gestion de projet :</dt>
-        <dd>Scrum</dd>
-    </dl>
-</section>
-<section>
-    <h2>Langues</h2>
-    <ul>
-        <li>Anglais : Courant</li>
-        <li>Français : Courant</li>
-        <li>Arabe : Maternel</li>
-        <li>Espagnol : Notion de bases</li>
-    </ul>
-</section>
-<section>
-    <h2>Centres d'Intérêt</h2>
-    <ul>
-        <li>Bénévolat</li>
-        <li>Voyage</li>
-        <li>Animation</li>
-    </ul>
-</section>
-<footer>
-    <h2>Trouvez-moi sur :</h2>
-    <ul>
-        <li><a href="https://www.linkedin.com/in/boutinkhar-hassan-57509416b/">LinkedIn</a></li>
-        <li><a href="https://www.facebook.com/hassan.boutnkhar/">Facebook</a></li>
-        <li><a href="https://www.instagram.com/hassanboutinkhar2000/">Instagram</a></li>
-    </ul>
-</footer>
+    <footer>
+        <h2>Trouvez-moi sur :</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/boutinkhar-hassan-57509416b/"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/hassan.boutnkhar/"><i class="fa fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://www.instagram.com/hassanboutinkhar2000/"><i class="fa fa-instagram"></i> Instagram</a></li>
+        </ul>
+    </footer>
+</div>
 </body>
 </html>
+
